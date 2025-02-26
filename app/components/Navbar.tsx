@@ -3,12 +3,16 @@ import Image from "next/image";
 import React, { useRef } from "react";
 
 const Navbar = () => {
-  const sideMenuRef = useRef();
+  const sideMenuRef = useRef<HTMLUListElement | null>(null)
   const openMenu = () => {
+    if(sideMenuRef.current){
     sideMenuRef.current.style.transform = "translateX(-16rem)";
+    }
   };
   const closeMenu = () => {
+    if(sideMenuRef.current){
     sideMenuRef.current.style.transform = "translateX(16rem)";
+    }
   };
   return (
     <>
@@ -25,8 +29,7 @@ const Navbar = () => {
           <Image
             src={assets.logo}
             alt=""
-            className="w-28 
-          curaor-pointer mr-14"
+            className="w-28 cursor-pointer mr-14"
             priority={true}
           />
         </a>
