@@ -33,11 +33,11 @@ export default function Home() {
     <>
     <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
     <Header />
-    <About />
-    <Services />
-    <Work />
-    <Contact />
-    <Footer />
+    <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+    <Services isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+    <Work isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+    <Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+    <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
     </>
   );
 }

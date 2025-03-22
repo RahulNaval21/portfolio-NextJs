@@ -1,15 +1,20 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { FC } from 'react'
 
-const Footer = () => {
+type FooterProps = {
+  isDarkMode: boolean;
+  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Footer : FC<FooterProps> = ({isDarkMode,setIsDarkMode}) => {
   return (
     <div className='mt-20'>
         <div className='text-center'> 
-            <Image alt="" src={assets.logo} className='w-36 mx-auto mb-2'/>
+            <Image alt="" src={isDarkMode ? assets.logo_dark : assets.logo} className='w-36 mx-auto mb-2'/>
 
             <div className='w-max flex items-center gap-2 mx-auto'>
-                <Image alt="" src={assets.mail_icon} className='w-6'/>
+                <Image alt="" src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} className='w-6'/>
                 rn842012@student.nitw.ac.in
             </div>
 
