@@ -20,7 +20,7 @@ const Work: FC<WorkProps> = ({ isDarkMode, setIsDarkMode }) => {
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.3, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
         My Portfolio
@@ -28,7 +28,7 @@ const Work: FC<WorkProps> = ({ isDarkMode, setIsDarkMode }) => {
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center text-5xl font-Ovo"
       >
         My Latest Work
@@ -36,7 +36,7 @@ const Work: FC<WorkProps> = ({ isDarkMode, setIsDarkMode }) => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
         Welcome to my web development portfolio! Explore a collection of
@@ -46,7 +46,7 @@ const Work: FC<WorkProps> = ({ isDarkMode, setIsDarkMode }) => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.9, delay: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-auto my-10 gap-5 dark:text-black"
       >
         {workData.map((project, index) => {

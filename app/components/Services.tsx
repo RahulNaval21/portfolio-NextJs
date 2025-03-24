@@ -37,7 +37,7 @@ const Services: FC<ServicesProps> = ({ isDarkMode, setIsDarkMode }) => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
         I am a Full Stack Developer from Hyderabad, India with nearly 1 year of
@@ -47,12 +47,12 @@ const Services: FC<ServicesProps> = ({ isDarkMode, setIsDarkMode }) => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.9, delay: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-auto gap-6 my-10"
       >
         {serviceData.map(({ icon, title, description, link }, index) => (
           <motion.div
-            whileInView={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05 }}
             key={index}
             className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
           >
